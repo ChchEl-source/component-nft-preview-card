@@ -1,0 +1,173 @@
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+
+}
+
+
+
+
+
+
+.component-container {
+    background-color: hsl(216, 50%, 16%);
+    max-width: 300px;
+    max-height: 530px;
+    width: 90%;
+    margin: 5% auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.4rem;
+    padding: 1.4rem;
+    border-radius: 15px;
+    box-shadow: hsl(216, 50%, 5%) 0px 20px 50px;
+
+}
+
+
+.main-image {
+    width: 100%;
+    justify-self: center;
+    border-radius: 5px;
+    position: relative;
+}
+
+
+
+.main-image:hover::before {
+    content: url(images/icon-view.svg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 99%;
+    padding: 0;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    position: absolute;
+    z-index: 1;
+    border-radius: 5px;
+    cursor: pointer;
+
+
+
+
+}
+
+
+.text-zone {
+    display: flex;
+    flex-direction: column;
+    gap: 1.9rem;
+}
+
+h1,
+.name {
+    color: hsl(0, 0%, 100%);
+}
+
+h1:hover,
+.name:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+
+}
+
+p {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+}
+
+.text-zone h1 {
+    font-size: 1.4rem;
+}
+
+
+
+.eth-zone,
+.author-zone {
+    display: flex;
+    align-items: center;
+
+}
+
+
+/* eth zone */
+
+.eth-zone {
+    justify-content: space-between;
+
+}
+
+.value {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+.value::before {
+    content: url(images/icon-ethereum.svg);
+    height: 10px;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+.days-left::before {
+    content: url(images/icon-clock.svg);
+    height: 10px;
+    vertical-align: middle;
+    margin-right: 3px;
+
+
+}
+
+
+
+/* author zone */
+
+.author-zone {
+    gap: 1.2rem;
+    position: relative;
+}
+
+.author-zone::before {
+    content: '';
+    width: 100%;
+    position: absolute;
+    border: 0.5px solid hsl(215, 32%, 27%);
+    top: -1rem;
+}
+
+.creator {
+    font-size: 0.9rem;
+}
+
+.avatar-img {
+    width: 30px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
