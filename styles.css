@@ -20,15 +20,12 @@ body {
 
 
 
-
-
-
 .component-container {
     background-color: hsl(216, 50%, 16%);
-    max-width: 300px;
-    max-height: 530px;
+    max-width: 350px;
+    max-height: 580px;
     width: 90%;
-    margin: 5% auto;
+    margin: 5rem auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
@@ -164,10 +161,45 @@ p {
 }
 
 .attribution {
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0, 0%, 100%);
     font-size: 11px;
-    text-align: center;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    background-color: hsl(228, 45%, 44%);
+    color: hsl(0, 0%, 100%);
+}
+
+
+
+
+@media screen and (min-width: 425px) {
+
+    .component-container{
+        max-width: 400px;
+    max-height: 620px;
+    margin: 6rem auto;
+
+    }
+    
+}
+
+@media screen and (min-width: 426px) {
+
+    .component-container{
+        margin: 10rem auto;
+
+    }
+    
+}
+
+@media screen and (min-width: 1024px)  {
+    
+    .component-container{
+        margin: 15rem auto;
+    }
 }
